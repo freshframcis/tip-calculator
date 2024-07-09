@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "space mono", sans-serif, "Times New Roman", Times, serif;
+}
+body {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(185, 41%, 84%);
+}
+.main-container {
+  margin: 80px auto 0;
+  padding: 10px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main-container .word {
+  display: flex;
+  color: hsl(183, 100%, 15%);
+  justify-content: center;
+  font-size: 0.75rem;
+  gap: 6px;
+}
+.main-container .last-word {
+  display: flex;
+  justify-content: center;
+  color: hsl(183, 100%, 15%);
+  font-size: 0.75rem;
+  gap: 5.5px;
+}
+.outter-container {
+  max-width: 40%;
+  min-width: 300px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 40px auto 0;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  gap: 15px;
+}
+.input-container {
+  width: 49%;
+  padding: 5px;
+  margin: 3px 3px 3px 5px;
+}
+.bill-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bill-container img {
+  max-height: 12px;
+  padding-left: 7px;
+}
+.input-form {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 3px;
+  padding: 2px;
+  margin-top: 4px;
+}
+.center-input {
+  width: 100%;
+  height: 21px;
+  border: none;
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 24px;
+  margin-top: 5px;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  padding-right: 10px;
+}
+.tip-container {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.inner-tip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.inner-tip-container button {
+  color: white;
+  border-radius: 4px;
+  outline: none;
+  font-weight: inherit;
+  border: none;
+}
+.tip-percent {
+  width: 69px;
+  height: 30px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-tip-container input {
+  width: 69px;
+  height: 30px;
+  border: none;
+  font-weight: inherit;
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+}
+
+.number-container {
+  width: 100%;
+}
+.number-alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.number-alert small {
+  color: rgba(255, 0, 0, 0.58);
+}
+input:focus {
+  border: none;
+  outline: none;
+}
+.second-container {
+  width: 45%;
+  color: white;
+  margin: 7px 2px 1px 10px;
+  padding: 20px 10px 30px 25px;
+  border-radius: 10px;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.output-container {
+  display: flex;
+  flex-direction: row;
+  height: 40%;
+  justify-content: space-between;
+  color: hsl(184, 14%, 56%);
+}
+.tip-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.amount-output {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  color: hsl(172, 67%, 45%);
+}
+.amount-output img {
+  max-height: 16px;
+  margin-right: 2px;
+}
+.amount-output span {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.button-class {
+  margin-inline: auto;
+  width: 100%;
+  margin-top: 10px;
+}
+.button-class button {
+  width: 95%;
+  height: 25px;
+  border-radius: 3px;
+  font-weight: 700;
+  border: none;
+  color: hsl(183, 100%, 15%);
+
+  background-color: hsl(172, 67%, 45%);
+}
+button:hover {
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  font-weight: inherit;
+}
+
+.tip-work {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.55rem;
+}
+.tip-work span {
+  color: white;
+}
+
+.inner-tip-container button:hover {
+  cursor: pointer;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.input-form:hover {
+  outline: 1.5px solid hsl(186, 14%, 43%);
+}
+
+.inner-tip-container input:hover {
+  outline: 1.5px solid hsl(186, 14%, 43%);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 420px) {
+  .main-container {
+    margin: 15px auto 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .outter-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .bill-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .center-input {
+    font-size: 16px;
+  }
+
+  .tip-percent {
+    width: 118px;
+    height: 35px;
+    border-radius: 4px;
+  }
+  .second-container {
+    width: 250px;
+  }
+  .tip-output {
+    height: 84px;
+  }
+  .inner-tip-container input {
+    width: 118px;
+    height: 35px;
+    border-radius: 4px;
+  }
+}

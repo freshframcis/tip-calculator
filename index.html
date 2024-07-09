@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="word">
+        <span class="letter">S</span>
+        <span class="letter">P</span>
+        <span class="letter">L</span>
+        <span class="letter">I</span>
+      </div>
+      <div class="last-word">
+        <span class="letter">T</span>
+        <span class="letter">T</span>
+        <span class="letter">E</span>
+        <span class="letter">R</span>
+      </div>
+
+      <div class="outter-container">
+        <div class="input-container">
+          <div class="bill-container">
+            <label for="bill">Bill</label>
+            <div class="input-form">
+              <img src="./images/icon-dollar.svg" alt="dollar" />
+              <input type="number" placeholder="0" id="input"  class="center-input"/>
+            </div>
+            <div class="tip-container">
+              <label for="tip"> Select Tip % </label>
+              <div class="inner-tip-container">
+                <button type="button" class="tip-percent btn">5%</button>
+                <button type="button" class="tip-percent btn">10%</button>
+                <button type="button" class="tip-percent btn">15%</button>
+                <button type="button" class="tip-percent btn">25%</button>
+                <button type="button" class="tip-percent btn">50%</button>
+                <input type="text" placeholder="Custom" class="tip-percent" id="customTip"/>
+              
+              </div>
+            </div>
+            <div class="number-container">
+              <div class="number-alert">
+                <span>Number of People</span>
+                <small id="error"></small>
+              </div>
+
+              <div class="input-form">
+                <img
+                  src="./images/icon-person.svg"
+                  alt="number of people"
+                /><input type="number" placeholder="0" id="people" class="center-input"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-container">
+          <div class="output-container">
+            <div class="tip-output">
+              <div class="tip-work">
+                <span>Tip Amount</span>
+                <small>/ person</small>
+              </div>
+              <div class="tip-work">
+                <span>Total</span>
+                <small>/ person</small>
+              </div>
+            </div>
+            <div class="amount-output">
+              <span class="number"
+                ><img
+                  src="./images/icon-dollar.svg"
+                  alt="amount in dollars"
+                /><span id="tip-value">0.00</span></span
+              >
+              <span class="number"
+                ><img
+                  src="./images/icon-dollar.svg"
+                  alt="amount in dollars"
+                /><span id="tip-value">0.00</span></span
+              >
+            </div>
+          </div>
+          <div class="button-class">
+            <button type="reset" id="reset">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Master-Francis</a>.
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
